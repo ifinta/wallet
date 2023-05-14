@@ -9,7 +9,7 @@ export default function OneTx({id, created_at, created_by_name, title, amount, o
     return (<Grid container spacing={2} alignItems="center">
                 <Grid item xs={12} md={4} lg={3}>{formatDate(created_at)}</Grid>
                 <Grid item xs={12} md={2} lg={2}>{created_by_name}</Grid>
-                <Grid item xs={12} md={1} lg={1} style={{ display: "block" }}>
+                <Grid item xs={12} md={1} lg={1}>
                     {onDelete && <IconButton onClick={onDelete}>
                             <Delete/>
                     </IconButton>}
