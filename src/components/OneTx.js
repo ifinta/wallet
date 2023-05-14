@@ -15,6 +15,6 @@ export default function OneTx({id, created_at, created_by_name, title, amount, o
                     </IconButton>}
                 </Grid>
                 <Grid item xs={12} md={4} lg={5}>{title}</Grid>
-                <Grid item xs={12} md={1} lg={1}>{amount}</Grid>
+                <Grid item xs={12} md={1} lg={1} style={{textAlign: "right"}}>{amount}</Grid>
 	    </Grid>);
 }
