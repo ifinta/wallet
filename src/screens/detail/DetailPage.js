@@ -1,5 +1,6 @@
 import {Button, Grid, Typography, LinearProgress} from "@mui/material";
 import UserList from './components/UserList'
+import NewTx from "./components/NewTx";
 import {useNavigate, useParams} from "react-router-dom";
 import {AXIOS_METHOD, doApiCall, useApi} from "../../hooks/useApi";
 import LoadingBlock from "../../components/LoadingBlock";
@@ -64,6 +65,7 @@ export default function DetailPage() {
         </Grid>
      </Grid>
      <br/>
+     <NewTx id={id}/>
      <br/>
      <Grid container spacing={2}>
         {txs && txs.map(item => {
