@@ -6,7 +6,7 @@ import {AXIOS_METHOD, doApiCall} from "../../hooks/useApi";
 import {useNavigate, useParams} from "react-router-dom";
 
 function validateTitle(title) {
-    if (title === '' || title === undefined){
+    if (title === ''){
         return 'There should be a title!';
     }
     if (title.length > 80){
